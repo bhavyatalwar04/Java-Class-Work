@@ -52,9 +52,8 @@ public class bubble {
             }
         }
 
-        System.out.println("Students sorted by age:");
-        for (Student s : students) {
-            System.out.println(s.name + " - " + s.age);
+        for (int i = 0; i < students.length; i++) {
+            System.err.println(students[i].name + " " + students[i].age);
         }
     }
 }
