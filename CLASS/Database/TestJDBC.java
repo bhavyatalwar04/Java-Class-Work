@@ -12,7 +12,7 @@ class TestJDBC {
         Connection con = DriverManager.getConnection(url, user, pwd);
         System.out.println("con---->" + con);
         Statement st = con.createStatement();
-        String sql = "INSERT INTO emp1(name,salary) VALUE('Aman',256856.05)";
+        String sql = "INSERT INTO emp1(name,salary) VALUE('bhavya',256856.05)";
         st.executeUpdate(sql);
         st.close();
         con.close();
