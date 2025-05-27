@@ -1,18 +1,13 @@
 
-import java.util.*;
+interface b {
+
+    int add(int a, int b);
+}
 
 class prac {
 
     public static void main(String[] args) {
-        Stack<Integer> st = new Stack<>();
-        st.add(10);
-        st.add(20);
-        st.add(30);
-        System.out.println("Stack: " + st);
-        System.out.println("top: " + st.peek());
-        System.out.println("pop: " + st.pop());
-        System.out.println("Stack: " + st);
-        System.out.println("Stack 10: " + st.search(10));
-
+        b b1 = (a, b) -> a + b;
+        System.out.println(b1.add(5, 10));
     }
 }

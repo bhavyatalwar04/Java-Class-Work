@@ -13,9 +13,9 @@ class TestJDBC {
         System.out.println("con---->" + con);
         Statement st = con.createStatement();
         String sql = "SELECT * FROM emp1";
-        Result rs = st.executeQuery(sql);
-        while (rs.next()) {
-            System.out.println("name: " + rs.getString("name"));
+        Result rs=st.executeQuery(sql);
+        while(rs.next()){
+            System.out.println("name: "+rs.getString("name"));
         }
 
         st.close();
